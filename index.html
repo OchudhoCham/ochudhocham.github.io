@@ -5,8 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ochudho Cham</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Adding custom styles and external fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-section img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+        .profile-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .intro {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .about-section, .education-section, .projects-section {
+            text-align: left;
+            margin-top: 40px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .contact {
+            margin-top: 40px;
+        }
+        .contact ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact ul li a {
+            color: #1e90ff;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -29,9 +88,9 @@
             <h2>Education & Certifications</h2>
             <ul>
                 <li><a href="https://www.coursera.org/account/accomplishments/verify/BLJ9JAKDSQ39?utm_source=ios&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Technical Support Fundamentals, Coursera 2024</a></li>
-		<li><a href="https://www.coursera.org/account/accomplishments/verify/IE42OH0KLNB1?utm_source=ios&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">The Bits and Bytes of Computer Networking, Coursera 2024</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/verify/IE42OH0KLNB1?utm_source=ios&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">The Bits and Bytes of Computer Networking, Coursera 2024</a></li>
                 <li><a href="https://www.coursera.org/account/accomplishments/verify/IBEWH8HLFV6M?utm_source=ios&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">Operating System & You Becoming a Power User</a></li>
-		<li>CS50 Web Programming with Python and JavaScript, HarvardX</li>
+                <li>CS50 Web Programming with Python and JavaScript, HarvardX</li>
                 <li>Bachelor’s Degree in Computer Science, University of Juba</li>
             </ul>
         </div>
@@ -40,19 +99,18 @@
         <div class="projects-section">
             <h2>Projects</h2>
             <div class="project">
-		    <h3><a href="https://github.com/OchudhoCham/supermarket.git">Supermarket Management System</a></h3>
+                <h3><a href="https://github.com/OchudhoCham/supermarket.git">Supermarket Management System</a></h3>
                 <p>A web-based system developed using PHP and the MVC pattern, allowing for customer, product, and payment management.</p>
             </div>
-          
-            <!-- Add more projects as needed -->
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="contact">
+            <ul>
+                <li><a href="mailto:ochudho.c@gmail.com">E-mail</a></li>
+                <li><a href="https://github.com/OchudhoCham">Github</a></li>
+            </ul>
         </div>
     </div>
-    <div class="contact">
-	    <ul>
-		    <li><a href="mailto:ochudho.c@gmail.com">E-mail</a></li>
-		    <li><a href="https://github.com/OchudhoCham">Github</a></li>
-	    </ul>
-
-	</div)
 </body>
 </html>
