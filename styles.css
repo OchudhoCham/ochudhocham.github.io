@@ -159,16 +159,16 @@ p {
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
 }
 
 .social-links a {
-    color: #333;
-    font-size: 1.5rem;
+    color: #555555;
+    font-size: 1.8rem;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #0077b5; /* Change color on hover (for example, LinkedIn's blue) */
+    color: #888888; /* Change color on hover (for example, LinkedIn's blue) */
 }
