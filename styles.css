@@ -156,3 +156,19 @@ p {
         font-size: 1rem;
     }
 }
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Change color on hover (for example, LinkedIn's blue) */
+}
