@@ -164,11 +164,10 @@ p {
 }
 
 .social-links a {
-    color: #555555;
     font-size: 1.8rem;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #888888; /* Change color on hover (for example, LinkedIn's blue) */
+/* Change color on hover (for example, LinkedIn's blue) */
 }
