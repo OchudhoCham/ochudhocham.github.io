@@ -4,56 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ochudho Cham</title>
-
-    <!-- Adding custom styles and external fonts -->
+    <!-- Astra-like Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', Arial, sans-serif;
+            background: #f8fafc;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            color: #222;
         }
         .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(60,72,88,0.07);
+            padding: 40px 24px 32px 24px;
+        }
+        .profile-section {
             text-align: center;
+            margin-bottom: 32px;
         }
         .profile-section img {
-            width: 150px;
-				height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin: 20px 0;
+            border: 4px solid #e9ecef;
+            box-shadow: 0 2px 8px rgba(60,72,88,0.10);
+            margin-bottom: 16px;
         }
-        .profile-section h1 {
-            font-size: 2.5rem;
+        .profile-section h2 {
+            font-size: 2.2rem;
             font-weight: 700;
+            margin: 0 0 6px 0;
+            color: #2d3748;
+        }
+        .profile-section p {
+            margin: 0 0 8px 0;
+            color: #6b7280;
+            font-size: 1.1rem;
         }
         .intro {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+            font-size: 1.13rem;
+            color: #374151;
+            margin-bottom: 0;
         }
-        .about-section, .education-section, .projects-section {
-            text-align: left;
-            margin-top: 40px;
+        section {
+            margin-top: 36px;
         }
         h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-weight: 600;
+            border-left: 4px solid #1e90ff;
+            padding-left: 10px;
+        }
+        h3 {
+            font-size: 1.15rem;
+            color: #2563eb;
+            margin-bottom: 6px;
+            font-weight: 600;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
+            margin: 0;
         }
         ul li {
             margin-bottom: 10px;
+            font-size: 1rem;
         }
         ul li a {
-            color: #1e90ff;
+            color: #2563eb;
             text-decoration: none;
+            transition: color 0.2s;
+        }
+        ul li a:hover {
+            color: #1e90ff;
+            text-decoration: underline;
+        }
+        .project {
+            background: #f1f5f9;
+            border-radius: 10px;
+            padding: 16px 18px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 4px rgba(60,72,88,0.04);
+        }
+        .contact {
+            margin-top: 36px;
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #64748b;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+        .social-links a:hover {
+            color: #1e90ff;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px 6px;
+            }
+            .profile-section img {
+                width: 90px;
+                height: 90px;
+            }
         }
     </style>
 </head>
@@ -61,66 +128,68 @@
     <div class="container">
         <!-- Profile Section -->
         <div class="profile-section">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHhKXdM4LK9uA/profile-displayphoto-shrink_400_400/B4DZXDySSsG8Ak-/0/1742746498032?e=2147483647&v=beta&t=vIAoFxiuP8VUJgIUR0qJmzsnUNB7rDqxrqFBejxNYu4">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHhKXdM4LK9uA/profile-displayphoto-shrink_400_400/B4DZXDySSsG8Ak-/0/1742746498032?e=2147483647&v=beta&t=vIAoFxiuP8VUJgIUR0qJmzsnUNB7rDqxrqFBejxNYu4" alt="Ochudho Cham">
             <h2>Ochudho Cham</h2>
             <p>Software Developer | IT Professional</p>
-            <p class="intro">Hello World!, I’m Ochudho, a software developer and IT professional living in Juba, South Sudan.</p>
+            <p class="intro">Hello World! I’m Ochudho, a software developer and IT professional living in Juba, South Sudan.</p>
         </div>
 
         <!-- About Section -->
-        <div class="about-section">
+        <section class="about-section">
             <h2>About Me</h2>
-	    <p class="intro">
-I’m passionate about crafting dynamic web applications and solving complex technical challenges. My journey in computer science has been fueled by a love for innovation and a relentless curiosity about how things work.
-
-Through my projects in Harvard’s CS50, I’ve delved into the fascinating world of web development, blending back-end and front-end technologies. I’m well-versed in PHP, JavaScript, and system administration, but I also enjoy working with tools like React, Bootstrap, Flask, and Python. This blend allows me to create responsive and interactive user experiences while building solid back-end functionality.
-
-With the Google IT Support Professional Certificate under my belt, I’ve gained a strong foundation in IT troubleshooting, system administration, and network fundamentals. My experience with Active Directory and Bash scripting has further sharpened my skills.
-
-I’m always on the lookout for creative ways to tackle software development and IT challenges because I firmly believe that creativity and code can solve just about anything. Let’s connect and explore the possibilities!
-
-
-	   </p>
-        </div>
+            <p class="intro">
+                I’m passionate about crafting dynamic web applications and solving complex technical challenges. My journey in computer science has been fueled by a love for innovation and a relentless curiosity about how things work.<br><br>
+                Through my projects in Harvard’s CS50, I’ve delved into the fascinating world of web development, blending back-end and front-end technologies. I’m well-versed in PHP, JavaScript, and system administration, but I also enjoy working with tools like React, Bootstrap, Flask, and Python. This blend allows me to create responsive and interactive user experiences while building solid back-end functionality.<br><br>
+                With the Google IT Support Professional Certificate under my belt, I’ve gained a strong foundation in IT troubleshooting, system administration, and network fundamentals. My experience with Active Directory and Bash scripting has further sharpened my skills.<br><br>
+                I’m always on the lookout for creative ways to tackle software development and IT challenges because I firmly believe that creativity and code can solve just about anything. Let’s connect and explore the possibilities!
+            </p>
+        </section>
 
         <!-- Education/Certification Section -->
-        <div class="education-section">
+        <section class="education-section">
             <h2>Education & Certifications</h2>
             <ul>
-            <li><a href="https://coursera.org/share/d084a3fcc2cd92cc06c2819eb0d22b88">Google IT Support Professional Certificate</a></li>
-<div data-iframe-width="320" data-iframe-height="270" data-share-badge-id="a581ab8c-37e2-45d4-a60e-f43c889c22ca" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-		        <li>CS50 Web Programming with Python and JavaScript, HarvardX</li>
+                <li>
+                    <a href="https://coursera.org/share/d084a3fcc2cd92cc06c2819eb0d22b88" target="_blank">
+                        Google IT Support Professional Certificate
+                    </a>
+                    <div data-iframe-width="320" data-iframe-height="270" data-share-badge-id="a581ab8c-37e2-45d4-a60e-f43c889c22ca" data-share-badge-host="https://www.credly.com"></div>
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </li>
+                <li>CS50 Web Programming with Python and JavaScript, HarvardX</li>
                 <li>Bachelor’s Degree in Computer Science, University of Juba</li>
             </ul>
-        </div>
+        </section>
 
         <!-- Projects Section -->
-        <div class="projects-section">
+        <section class="projects-section">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Search</h3>
-                <p>CS50 web Programming with Python and JavaScript - Project 0</p>
+                <p>CS50 Web Programming with Python and JavaScript - Project 0</p>
                 <ul>
-                 <li><a href="https://github.com/OchudhoCham/search.git">Source Code</a>
+                    <li><a href="https://github.com/OchudhoCham/search.git" target="_blank">Source Code</a></li>
                 </ul>
             </div>
-        </div>
+        </section>
         
         <!-- Contact Section -->
-        <div class="contact"> 
-<div class="social-links">
-<a href="https://facebook.com/ochudho.cham" target="_blank" aria_label="Facebook">
-<i class="fa-brands fa-facebook"></i>
-    <a href="https://github.com/OchudhoCham" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="http://linkedin.com/in/ochudho-cham-3792aa236" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://twitter.com/ochudhocham" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-    </a>
-</div>
+        <div class="contact">
+            <h2>Connect with Me</h2>
+            <div class="social-links">
+                <a href="https://facebook.com/ochudho.cham" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/OchudhoCham" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="http://linkedin.com/in/ochudho-cham-3792aa236" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/ochudhocham" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
     </div>
 </body>
