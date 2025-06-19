@@ -10,11 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Inter', Arial, sans-serif;
+            font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
             background: #f8fafc;
             margin: 0;
             padding: 0;
-            color: #222;
+            color: #23272f;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            color: #1e293b;
+            margin-top: 0;
         }
         .container {
             max-width: 800px;
@@ -112,6 +125,15 @@
         .social-links a:hover {
             color: #1e90ff;
         }
+        .about-section .intro {
+            font-size: 1rem;           /* Match other text size */
+            color: #374151;
+            line-height: 1.7;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            margin-bottom: 0;
+            font-family: 'Inter', Arial, sans-serif;
+        }
         /* Responsive */
         @media (max-width: 600px) {
             .container {
@@ -128,7 +150,11 @@
     <div class="container">
         <!-- Profile Section -->
         <div class="profile-section">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHhKXdM4LK9uA/profile-displayphoto-shrink_400_400/B4DZXDySSsG8Ak-/0/1742746498032?e=2147483647&v=beta&t=vIAoFxiuP8VUJgIUR0qJmzsnUNB7rDqxrqFBejxNYu4" alt="Ochudho Cham">
+            <img 
+              src="ochudho.jpeg" 
+              alt="Ochudho Cham"
+              style="border-radius:50%; border:4px solid #e9ecef; box-shadow:0 2px 8px rgba(60,72,88,0.10); width:120px; height:120px; object-fit:cover;"
+            >
             <h2>Ochudho Cham</h2>
             <p>Software Developer | IT Professional</p>
             <p class="intro">Hello World! I’m Ochudho, a software developer and IT professional living in Juba, South Sudan.</p>
@@ -149,15 +175,35 @@
         <section class="education-section">
             <h2>Education & Certifications</h2>
             <ul>
+                                <li>Bachelor’s Degree in Computer Science, University of Juba</li>
                 <li>
                     <a href="https://coursera.org/share/d084a3fcc2cd92cc06c2819eb0d22b88" target="_blank">
                         Google IT Support Professional Certificate
                     </a>
-                    <div data-iframe-width="320" data-iframe-height="270" data-share-badge-id="a581ab8c-37e2-45d4-a60e-f43c889c22ca" data-share-badge-host="https://www.credly.com"></div>
-                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                 </li>
-                <li>CS50 Web Programming with Python and JavaScript, HarvardX</li>
-                <li>Bachelor’s Degree in Computer Science, University of Juba</li>
+
+                <li>
+                    <a href="https://www.coursera.org/account/accomplishments/records/WXJ4E93B2QM9" target="_blank">
+                        Introduction to Data Analytics
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.coursera.org/account/accomplishments/records/DDWITOQ32OI4" target="_blank">
+                        Database Design and Basic SQL in PostgreSQL
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/7700b876d485fb655b7d75479f04b4ed27d50a8c" target="_blank">
+                        Joining Data in SQL
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/cb76ea882f41d2a841cc67c646f32429aa148347" target="_blank">
+                        Intermediate SQL
+                    </a>
+                </li>
+                                <li>CS50 Web Programming with Python and JavaScript, HarvardX</li>
+                <li>Google Data Analytics</li>
             </ul>
         </section>
 
