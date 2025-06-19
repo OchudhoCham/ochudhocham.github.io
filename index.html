@@ -134,6 +134,29 @@
             margin-bottom: 0;
             font-family: 'Inter', Arial, sans-serif;
         }
+        .cv-btn {
+            display: inline-block;
+            margin-bottom: 18px;
+            padding: 12px 28px;
+            background: linear-gradient(90deg, #2563eb 0%, #1e90ff 100%);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.08rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.10);
+            transition: background 0.2s, transform 0.2s;
+            cursor: pointer;
+        }
+        .cv-btn i {
+            margin-right: 8px;
+        }
+        .cv-btn:hover {
+            background: linear-gradient(90deg, #1e90ff 0%, #2563eb 100%);
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 4px 16px rgba(30,144,255,0.13);
+        }
         /* Responsive */
         @media (max-width: 600px) {
             .container {
@@ -222,6 +245,15 @@
         <!-- Contact Section -->
         <div class="contact">
             <h2>Connect with Me</h2>
+            <a 
+        href="https://docs.google.com/document/d/18J6RZlyXXeFR9DkVEXj1szfnsHgEHpOS9AMoqwc12Mk/export?format=pdf"
+        class="cv-btn"
+        target="_blank"
+        rel="noopener"
+        title="Download CV"
+    >
+        <i class="fas fa-download"></i> Download CV
+    </a>
             <div class="social-links">
                 <a href="https://facebook.com/ochudho.cham" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
